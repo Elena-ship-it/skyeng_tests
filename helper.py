@@ -110,8 +110,7 @@ class SkyEngTestHelper:
                     (By.XPATH, "//div[contains(text(), 'Расписание')]")
                 )
             )
-            self.actions.move_to_element
-            (schedule_btn).pause(0.2).click().perform()
+            self.actions.move_to_element(schedule_btn).pause(0.2).click().perform()
             logging.info("Кнопка 'Расписание' найдена и кликнута")
         except TimeoutException:
             logging.error("Не удалось найти кнопку 'Расписание'")

@@ -150,8 +150,7 @@ class PersonalEventPage:
                     ElementClickInterceptedException,
                     StaleElementReferenceException,
                 ):
-                    self.actions.move_to_element
-                    (slot).pause(0.2).click().perform()
+                    self.actions.move_to_element(slot).pause(0.2).click().perform()
                 self.wait.until(
                     EC.visibility_of_element_located(self.EDIT_BTN)
                 )

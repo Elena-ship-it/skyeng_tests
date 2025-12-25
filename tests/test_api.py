@@ -184,8 +184,7 @@ def test_create_and_delete_event(api_client):
         assert getattr(r_create, "status_code", None) == 200
 
         try:
-            event_id = r_create.json().get
-            ("data", {}).get("payload", {}).get("id")
+            event_id = r_create.json().get("data", {}).get("payload", {}).get("id")
         except Exception:
             event_id = None
 
