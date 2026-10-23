@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+.env
+dist/
+build/
+*.egg-info/
+chromedriver
+chromedriver.exe
+node_modules/
+reports/
